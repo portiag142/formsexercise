@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML non inputs form elemnts">
+    <title>Non Input Form Elements</title>
+</head>
+<body>
+    <form>
+    <!--Select Elements-->
+    <!--Select Elements have opening and closing tags. Must create option elements inside of thoe tags.-->
+    <label for="fastFood">Favorite Fast Food</label>
+    <select name="" id="fastFood">
+        <!--The hidden attribute will make the option no longer display after the user click on the dropdown-->
+        <option value="">Select a restaurant</option>
+        <!--When an option in a select element is submitted the value set for value attribute is what is sent -->
+        <option value="">Wendy's</option>
+        <option value="">Hardees</option>
+        <option value="">Chickfila</option>
+    </select>
+    <br>
+<!--Text area-->
+<label for="joke">Type out a funny joke:</label>
+<!--Textarea is a textbox where the user can type/ The cols and rows attributes determine the size of the text area-->
+<!--Text in between the opening and closing text area tags will be set as the starting value.(NOTE: This will override a placeholder)-->
+<!--Text in between the opening and closing textarea tags will be set as the starting value -->
+<textarea name="" id="joke" cols="30" rows="10"></textarea
+    placeholder= "Type Joke here"> What do you call an alligator that is wearing a vest?</textarea>
+<br>
+    <!--Button-->
+    <!--Similar to a submit input, the Button element will also submit/send form values.-->
+<!--Button elemnet must be inside the form tags that the other elements are inside of-->
+    <button>Click Here</button>
+</form>
+
+<form>
+    <!--Fieldset-->
+    <!--FIELD set is used to group related form elements on a page. A legend element is commonly used with a fieldset add a title to it-->
+    <fieldset>
+        <legend>Favorite Desserts</legend>
+        <label for="cold">Cold</label>
+        <select  id="cold">
+        <option>Tiramisu</option>
+        <option>Icecream</option>
+        <option>cheesecake</option>
+    </select>
+    <br>
+    <label for="hot">Hot</label>
+    <select id="hot">
+        <option>Rhubarb and Custard</option>
+        <option>Cobblers</option>
+        <option>Krispy Kreme Donuts</option>
+        <option>peanut butter cookies</option>
+        </select>
+        <br>
+        <button>Click here to submit</button>
+    </fieldset>
+</form>
+</body>
+</html>

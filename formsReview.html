@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Forms">
+    <title>Forms Review</title>
+</head>
+
+<body>
+    <h1>Forms Review</h1>
+
+    <form>
+        <div>
+            <!--The "for" and "id"attributes can be used to link/bind labels and inputs together-->
+            <label for="fullName">Full Name</label>
+            <!--The "name" attribute is used to access the users entry into an input after the form is submitted/sent-->
+
+            <input type="text" id="fullName" placeholder="Enter Name" name="fullName" required>
+        </div>
+        <!--When clicked a submit input will submit/send the values of the other form elements that are in the same form-->
+        <input type="submit">
+        <div>
+            <lavel for="email">Email</lavel>
+            <input type="email" name="" id="emai">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="Password" name="password" id="password">
+        </div>
+        <div>
+            <label for="hotdog">Check if you understand hotdog is food</label>
+            <input type="checkbox" name="hotDog" id="hotdog">
+        </div>
+        <fieldset>
+            <legend>
+                Best Movie Series
+            </legend>
+            <div>
+                <!--Radio inputs must be linked together using the name attribute so that only one option can be selected-->
+                <label for="">Star Trek</label>
+                <!--WHEN A SELECTED RADIO INPUT IN A FORM IS SUBMITTED/SENT WHAT IS SENT IS THE VALUE SET FOR THE "VALUE" ATTRIBUTE-->
+                <input type="radio" id="starTrek" name="movies" value="Star Trek">
+            </div>
+            <Div>
+                <input type="radio" name="movies" id="hp" value="Harry Potter">
+                <label for="hp">Harry Potter</label>
+
+            </Div>
+
+            <input type="radio" name="movies" id="bw" value="Baywatch">
+            <div><label for="bw">Baywatch</label>
+            </div>
+
+            <input type="radio" name="movies" id="jp">
+            <div><label for="jp">Jurassic Park</label>
+            </div>
+        </fieldset>
+        <div>
+            <!--The step attribute will increase the number by the number set for the value of the step attribute-->
+            <label for="jajva">Cups of Coffee today</label>
+            <input type="number" name="java" id="java" step="2">
+
+        </div>
+        <div>
+            <label for="css">First Day of CSS</label>
+            <br>
+            <!--File Input (For uploading a file to a form)-->
+            <input type="date" name="css" id="css">
+
+        </div>
+        <div>
+            <label for="Top Secret">Top Secret Document </label></label>
+        </div>
+        <!--When clicked a submut input will sumbit/send the values of the other -->
+        <input type="submit">
+    </form>
+    <form>
+        <fieldset>
+            <div>
+                <label for="favColor">Favorite Color</label>
+                <!--Using the "multiple"attribute on the selet elemnt will allow the user to select multiple options-->
+                <select name="favColor id=" favColor>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                </select>
+            </div>
+            <div>
+                <label for="question">Ask a question</label>
+                <textarea name="question" id="question"> </textarea>
+            </div>
+            <button>don't push the </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
